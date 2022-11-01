@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "nome_do_produto": "Nicotine Polacrilex",
+    "nome_do_produto": "Nicotine >=Polacrilex",
     "nome_da_empresa": "Target Corporation",
     "data_de_fabricacao": "2021-02-18",
     "data_de_validade": "2023-09-17",
@@ -67,21 +67,10 @@
     "nome_do_produto": "Aspirin",
     "nome_da_empresa": "Galena Biopharma",
     "data_de_fabricacao": "2021-02-22",
-    "data_de_validade": "2024-03-14",
-    "numero_de_serie": "KZ63 800H NM4B ZOWB YYUI",
-    "instrucoes_de_armazenamento": "instrucao 8" 
-  },
-  {
-  "id": "9",
-  "nome_do_produto": "eucalyptus globulus",
-  "nome_da_empresa": "Target Corporation",
-  "data_de_fabricacao": "2020-09-06",
-  "data_de_validade": "2024-05-21",
-  "numero_de_serie": "GT74 LHWJ FCXL JNQT ZCXM 4761 GWSP",
-  "instrucoes_de_armazenamento": "instrucao 9"
-  },
-  {
-    "id": "10",
+    mero_de_serie": "FR29 5791 5333 58XR G4PR IG28 D08",
+    "instrucoes_de_armazenamento": "instrucao 10"
+  }
+]": "10",
     "nome_do_produto": "Titanium Dioxide",
     "nome_da_empresa": "Target Corporation",
     "data_de_fabricacao": "2020-12-08",

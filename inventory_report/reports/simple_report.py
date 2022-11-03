@@ -2,7 +2,7 @@ import datetime
 from typing import Counter
 
 
-class SimpleReport:
+class SimpleReport():
 
     @staticmethod
     def generate(data):

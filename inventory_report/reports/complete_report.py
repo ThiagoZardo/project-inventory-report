@@ -26,14 +26,13 @@ class CompleteReport(SimpleReport):
 
             empresa_produtos.append(product['nome_da_empresa'])
 
-        empresa_mais_produtos = Counter(empresa_produtos).most_common(3)
+        empresa_mais_produtos = Counter(empresa_produtos).most_common()
+        string_response = ''
+        for empresa in empresa_mais_produtos:
+            string_response += f"- {empresa[0]}: {empresa[1]}\n"
 
         return (
-            f"Data de fabricação mais antiga: {min(fabricacao_mais_antiga)}\n"
-            f"Data de validade mais próxima: {min(validade_mais_proxima)}\n"
-            f"Empresa com mais produtos: {empresa_mais_produtos[0][0]}\n"
+            f"{SimpleReport.generate(data)}\n"
             f"Produtos estocados por empresa:\n"
-            f"- {empresa_mais_produtos[0][0]}: {empresa_mais_produtos[0][1]}\n"
-            f"- {empresa_mais_produtos[1][0]}: {empresa_mais_produtos[1][1]}\n"
-            f"- {empresa_mais_produtos[2][0]}: {empresa_mais_produtos[2][1]}\n"
+            f"{string_response}"
         )

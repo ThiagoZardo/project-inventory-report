@@ -20,7 +20,7 @@ class Inventory():
                 resultado = json.load(file)
         elif path.endswith('.xml'):
             with open(path, encoding='utf-8') as file:
-                resultado = xmltodict.parse(file)
+                resultado = xmltodict.parse(file.read())['dataset']['record']
         if type == 'simples':
             return SimpleReport.generate(resultado)
         else:
